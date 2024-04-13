@@ -6,43 +6,47 @@
     <title>homework</title>
     <a href="/style.css"></a>
     <style>
-        .ded{
-        width: 350px;
-        height: 220px;
-        padding: 15px 10px 20px 10px;
-        margin-bottom: 30px;
-        border: 2px dashed red;
-        background-color: green;
-    }
+.container{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 450px;
+position: relative;
+      }
 
-    img{
-      height: 500px;
-    }
+      .box1{
+       position: absolute;
+       bottom: 1px;
+       left: 1100px;
+       background-color: tomato;
+       height: 300px;
+       width: 300px;
+       z-index: 1;
+      }
+      .box2{
+       position: absolute;
+background-color: blueviolet;
+height: 300px;
+        width: 300px;
+        
+       z-index: 2;
+      }
+      .box3{
+      position: absolute;
+      top: 1px;
+       right: 1100px;
+background-color: mediumspringgreen;
+height: 300px;
+        width: 300px;
+       z-index: 1;
+      }
+      
 
-    .container{
-      display: flex;
-      justify-content: center;
-    }
     </style>
 </head>
-<body>
-  <div class="container">
-    <div>
-  <div class="ded">
-    content
-  </div>
-
-<p>How I occupy my freetime</p>
-<ul>
-  <li>Bjj</li>
-  <li>Tennis</li>
-</ul>
-
-<img src="./images/30 Cats Who Decided To Pretend To Be Penguins.jpeg" alt="">
-<p>I like to watch cat videos</p>
-
-<h5>I honestly have no idea what tags I learned on first lesson</h5>
-</div>
-</div>
+<body class="container">
+  <div class="box1"></div>
+  <div class="box2"></div>
+  <div class="box3"></div>
 </body>
 </html>
