@@ -4,15 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>homework</title>
-    <a href="/style.css"></a>
+ <link rel="stylesheet" href="./style.css">
     <style>
-.container{
-display: flex;
-justify-content: center;
-align-items: center;
-margin-top: 450px;
-position: relative;
-      }
+
 
       .container{
       width: 100px;
@@ -27,30 +21,32 @@ position: relative;
         animation-iteration-count: infinite;
        height: 30px;
        width: 30px;
-       background-color: red;
-      color: hsl(60, 100%, 50%);
+
       }
 
 
 @keyframes box{
-  20,5%{
-    transform: translate(100;0);
-    background-color:  hsl(300, 100%, 25%);
+  0%{
+    background-color: hsl(0, 100%, 50%) ;
   }
-  
-  50%{
-    transform: translate(100;100);
+  25%{
+    transform: translate(0,100px);
     background-color: hsl(240, 100%, 50%);
   }
   
-  70,5%{
-    transform: translate(0;100);
-background-color: hsl(120, 100%, 25%);
+  50%{
+    transform: translate(100px,100px);
+    background-color: hsl(120, 100%, 25%);
+  }
+  
+  75%{
+    transform: translate(100px,0px);
+background-color:hsl(60, 100%, 50%) ;
   }
 
   100%{
-    transform: translate(0;0);
-    background-color: hsl(60, 100%, 50%);
+    transform: translate(0,0);
+    background-color: red;
   }
 
 
